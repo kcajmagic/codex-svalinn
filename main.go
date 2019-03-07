@@ -70,6 +70,7 @@ type SvalinnConfig struct {
 	Db              db.Config
 	Webhook         WebhookConfig
 	RegexRules      []RuleConfig
+	MaxBatchSize    int
 }
 
 func SetLogger(logger log.Logger) func(delegate http.Handler) http.Handler {

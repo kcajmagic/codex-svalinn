@@ -2,12 +2,13 @@
 
 
 [[projects]]
-  digest = "1:9c1a8714b106ce080066040bbf5e598cd5439e99d346cd55f8726eee46abe440"
+  branch = "change_db_driver"
+  digest = "1:43d39db0e51973093148fdc958a8b7719eb2cd521a9da11b0213144174f88018"
   name = "github.com/Comcast/codex"
   packages = ["db"]
   pruneopts = "UT"
-  revision = "2829412a0f5730c0b8440538e86df7ffd8753537"
-  version = "v0.2.0"
+  revision = "74d1e1546857ffbd688ad3bc38b59854460b1ada"
+  source = "github.com/kcajmagic/codex"
 
 [[projects]]
   branch = "master"
@@ -32,7 +33,7 @@
     "xmetrics",
   ]
   pruneopts = "UT"
-  revision = "25ec3c974a4c38a1e4a6d19bffcb76c363f733cb"
+  revision = "28116f818770fd13e0f2cafb3ace9f06a73947a0"
 
 [[projects]]
   digest = "1:a69ab3f1445ffd4815add4bd31ba05b65b3b9fec1ade5057d5d717f30e6efd6d"
@@ -195,6 +196,21 @@
   revision = "0f79e4ea3248354c789cba274542e0a8e55971db"
 
 [[projects]]
+  digest = "1:6a5edb6e9ad91f22d33e01739bbabea324fed674c40bc4f7d60adb48235e8b48"
+  name = "github.com/jackc/pgx"
+  packages = [
+    ".",
+    "chunkreader",
+    "internal/sanitize",
+    "pgio",
+    "pgproto3",
+    "pgtype",
+  ]
+  pruneopts = "UT"
+  revision = "c59c9cac59ab95eceb0c12ff338923c62f411ea2"
+  version = "v3.3.0"
+
+[[projects]]
   digest = "1:7e63b12cdd7bef2c411d736cb67e28134d39f5d236aa1bfb8f3d55e3ad709eca"
   name = "github.com/jinzhu/gorm"
   packages = [
@@ -330,7 +346,7 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:bfc66a1fd78dc8f14d419fd52a5a42db1d572e887ebcc80b98c1a515a8f2d837"
+  digest = "1:01cd0cd47758f04c5604daa3be4637e2afa1e0c15af7e08289e95360369e4f48"
   name = "github.com/prometheus/procfs"
   packages = [
     ".",
@@ -340,7 +356,7 @@
     "xfs",
   ]
   pruneopts = "UT"
-  revision = "bbced9601137e764853b2fad7ec3e2dc4c504e02"
+  revision = "d0f344d83b0c80a1bc03b547a2374a9ec6711144"
 
 [[projects]]
   digest = "1:3e39bafd6c2f4bf3c76c3bfd16a2e09e016510ad5db90dc02b88e2f565d6d595"
@@ -362,12 +378,12 @@
   version = "v1.3.0"
 
 [[projects]]
-  digest = "1:68ea4e23713989dc20b1bded5d9da2c5f9be14ff9885beef481848edd18c26cb"
+  digest = "1:1b753ec16506f5864d26a28b43703c58831255059644351bbcb019b843950900"
   name = "github.com/spf13/jwalterweatherman"
   packages = ["."]
   pruneopts = "UT"
-  revision = "4a4406e478ca629068e7768fc33f3f044173c0a6"
-  version = "v1.0.0"
+  revision = "94f6ae3ed3bceceafa716478c5fbf8d29ca601a1"
+  version = "v1.1.0"
 
 [[projects]]
   digest = "1:c1b1102241e7f645bc8e0c22ae352e8f0dc6484b6cb4d132fa9f24174e0119e2"
@@ -413,11 +429,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:a2bc6cb1f4e1d0b512e1d47d392ead580006b5bdade6ffde16271759fe609b34"
+  digest = "1:7ea2a5bdb9273298b19f6c14d01c11f592ed57bd6a658f7c0ddf9927011cc763"
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "UT"
-  revision = "a34e9553db1e492c9a76e60db2296ae7e5fbb772"
+  revision = "572b51eaf7221935bdec454796989ba8318fa6f3"
 
 [[projects]]
   digest = "1:8029e9743749d4be5bc9f7d42ea1659471767860f0cdc34d37c3111bd308a295"
@@ -460,6 +476,7 @@
     "github.com/Comcast/webpa-common/logging",
     "github.com/Comcast/webpa-common/logging/logginghttp",
     "github.com/Comcast/webpa-common/secure",
+    "github.com/Comcast/webpa-common/semaphore",
     "github.com/Comcast/webpa-common/server",
     "github.com/Comcast/webpa-common/wrp",
     "github.com/Comcast/webpa-common/xhttp/xcontext",
